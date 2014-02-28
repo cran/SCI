@@ -1,0 +1,37 @@
+version 1.0-0:
+	* Final proof reading before release
+version 0.0-7:
+	* remove test.precip data set and documentation
+	* merge documentation of fitSCI and transfromSCI
+	* remove some of the default parameters of fitSCI to avoid inappropriate usage
+	* transformSCI: set parameter sci.limit=Inf (previous: =3)
+	* include more examples in the documentation
+	* updated /inst/CITATION
+version 0.0-6:
+	* included "center of mass" estimate for p0 in fitSCI and transform SCI, new parameter: p0.center.mass
+	* removed unnecessary element from loop in fitSCI
+	* bug fix in error handling of fitSCI
+version 0.0-5:
+	* include "pre-scaling" in fitSCI (and transformSCI) to make fitting proceedure more stable in case of very large values
+	* add call to fitSCI output
+version 0.0-4:
+	* update documentation of pe3 and genlog
+	* spell-check documentation
+	* rename file R/dristrstart.r to R/dristrstart.r
+	* define NAMESPACE
+	* removing code-documentation mismatch for transformSCI.default
+	* incorporate some links in dist.start.Rd
+version 0.0-3:
+	* transformSCI.default : catch errors if fitSCI produces NA parameters
+	* provereading documentation
+version 0.0-2:
+	* introducing further guality flag information in fitSCI.default
+	* introducing suppressWarnings when calling mledist in fitSCI.default
+	* wrap call to mledist in capture.output to avoid printing of messages
+	* bugfixes related to error catching in fitSCI.default
+	* catch error in fitSCI.default if "distr" not definded for start.fun
+	* bugfix in dist.start related to error handling
+	* bugfix in fitSCI.default, suppress now _all_ warnings on demand
+	* wrap call to 'filter' in as.numeric
+	* in fitSCI.default, add small number before fitting  zero-bounded distributions: x <- c(0.01*min(x))
+

@@ -1,0 +1,28 @@
+citHeader("To cite package 'SCI' in publications use:")
+
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry="Manual",
+         title = "SCI: Standardized Climate Indices such as SPI, SRI or SPEI",
+         author = personList(as.person("Lukas Gudmundsson"),as.person("James H. Stagge")), 
+         year = year,
+         note = vers,
+         textVersion =
+         paste("Gudmundsson, L. & Stagge, J. H. (",year, "). SCI: Standardized Climate Indices such as SPI, SRI or SPEI", 
+               vers, ".", sep=""))
+
+citEntry(entry="Article",
+	title = "Candidate Distributions for Climatological Drought Indices  (SPI and SPEI)", 
+	 author = personList(
+             as.person("J. H. Stagge"),
+             as.person("L. M. Tallaksen"),
+             as.person("L. Gudmundsson"),
+             as.person("A. van Loon"),
+             as.person("K. Stahl")
+	 ),
+	 journal = "submitted",
+	 year = "2014",
+	 textVersion ="  Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
+         Stahl, K. Candidate Distributions for Climatological Drought Indices  (SPI and SPEI), 2014, submitted."
+)

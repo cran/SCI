@@ -1,0 +1,20 @@
+Package: SCI
+Type: Package
+Title: Standardized Climate Indices such as SPI, SRI or SPEI
+Version: 1.0-0
+Date: 2014-02-28
+Author: Lukas Gudmundsson & James H. Stagge
+Maintainer: Lukas Gudmundsson <lukas.gudmundsson@env.ethz.ch>
+Depends: fitdistrplus, lmomco
+Suggests: evd
+Description: Functions for generating Standardized Climate Indices (SCI). 
+		SCI is a transformation of (smoothed) climate (or environmental)
+		time series that  removes seasonality and forces the data to
+		take values of the standard normal distribution. SCI was 
+		originally developed for precipitation. In this case it is 
+		known as the Standardized Precipitation Index (SPI).
+License: GPL (>= 2)
+Packaged: 2014-02-28 13:21:28 UTC; lukasgu
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2014-02-28 16:07:06

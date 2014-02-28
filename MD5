@@ -1,0 +1,12 @@
+e0b64313345e95b1745eaf2cb9194219 *ChangeLog
+0ecb2d4f1adfd40afe273af3cab9d073 *DESCRIPTION
+ff191ad9f1cf5204a92884499696b22a *NAMESPACE
+73439f36513376eeb5d1aafd15dcabfc *R/distrstart.r
+6559e45ffecc9a7ef05431a019d9037d *R/sci.r
+2541f621f28c4f63193ad55e673829e1 *R/sci_distributions.r
+ba15f964b052a91bc7f873d258a166df *inst/CITATION
+c2363fa611f780214f90e424d3be7bf1 *man/SCI-package.Rd
+ab3d070c30f71e98a99b7a36fa82f2cc *man/dist.start.Rd
+ad0417bc6f53e52bced68f3b39920798 *man/fitSCI.Rd
+30d5903973c32ed7a44f6fb267e1d25e *man/genlog.Rd
+6b963023b53cf674faf24cb8b16bc67e *man/pe3.Rd

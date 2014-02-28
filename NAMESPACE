@@ -1,0 +1,29 @@
+####################################################
+## Exports
+####################################################
+
+## Export distributions and associated functions
+exportPattern(genlog)
+exportPattern(pe3)
+export(dist.start)
+export(lmom.start)
+export(mom.start)
+
+## Export functions for SCI transformation
+export(fitSCI)
+export(transformSCI)
+
+## Register associated S3 methods
+S3method(fitSCI, default)
+S3method(transformSCI, default)
+
+
+####################################################
+## Imports
+####################################################
+importFrom(fitdistrplus, mledist) ## required for fitSCI
+import(lmomco) ## several functions needed...
+
+
+
+## exportPattern("^[[:alpha:]]+")

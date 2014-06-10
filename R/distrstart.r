@@ -68,7 +68,7 @@ lmom.start <- function(x,distr=c("gamma","genlog","gev","gumbel",
         } else {
             c(NA,NA)
         }
-        names(ppar) <- c("mean","sigma") 
+        names(ppar) <- c("mean","sd") 
     } else if(distr == "pe3"){
         ppar <- try({
             estimate <-  parpe3(x.lmom,checklmom=FALSE)

@@ -1,8 +1,8 @@
 Package: SCI
 Type: Package
 Title: Standardized Climate Indices such as SPI, SRI or SPEI
-Version: 1.0-0
-Date: 2014-02-28
+Version: 1.0-1
+Date: 2014-06-10
 Author: Lukas Gudmundsson & James H. Stagge
 Maintainer: Lukas Gudmundsson <lukas.gudmundsson@env.ethz.ch>
 Depends: fitdistrplus, lmomco
@@ -14,7 +14,7 @@ Description: Functions for generating Standardized Climate Indices (SCI).
 		originally developed for precipitation. In this case it is 
 		known as the Standardized Precipitation Index (SPI).
 License: GPL (>= 2)
-Packaged: 2014-02-28 13:21:28 UTC; lukasgu
+Packaged: 2014-06-10 07:46:09 UTC; lukasgu
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-02-28 16:07:06
+Date/Publication: 2014-06-10 10:44:53

@@ -1,3 +1,5 @@
+version 1.0-1:
+	* fix issue with inconsistent naming of distribution parameters for "norm" in "lmom.start": "sigma" changed to "sd"
 version 1.0-0:
 	* Final proof reading before release
 version 0.0-7:

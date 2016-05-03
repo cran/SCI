@@ -12,11 +12,11 @@
   likelihood estimation. 
 }
 \usage{
-dist.start(x, distr, ...)
+dist.start(x, distr,...)
 lmom.start(x, distr = c("gamma","genlog","gev","gumbel",
-          "lnorm","norm","pe3","weibull"), ...)
+          "lnorm","norm","pe3","weibull"),...)
 mom.start(x, distr = c("gamma","gumbel","logis","lnorm","norm",
-          "weibull"), ...)
+          "weibull"),...)
 }
 
 \arguments{

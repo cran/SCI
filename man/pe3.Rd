@@ -54,10 +54,9 @@ qpe3(p, shape, scale, location)
 }
 
 \references{
-  Asquith, W.H., 2013, lmomco -- L-moments, trimmed L-moments,                                                                      
+  Asquith, W.H., 2013: lmomco -- L-moments, trimmed L-moments,                                                                      
   L-comoments, censored L-moments, and many distributions. R package                                                               
-  version 1.7.8, \url{http://www.cran.r-project.org/package=lmomco}, Texas                                                               
-  Tech University, Lubbock, Texas.  
+  version 1.7.8 , Tech University, Lubbock, Texas.  
 }
 
 \author{

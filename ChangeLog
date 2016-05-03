@@ -1,3 +1,10 @@
+version 1.0-2:
+	* Updated citation information and references in doccumentation
+	* replaced require(evd) with requireNamespace("evd", quietly = TRUE) in file distrstart.r
+	* changed call to function mmedist to fitdistrplus::mmedist in file distrstart.r
+	* added more 'importFrom(...)' to NAMESPACE
+	* some non-ascii characters removed in comments or .R files
+	* title changed to title case
 version 1.0-1:
 	* fix issue with inconsistent naming of distribution parameters for "norm" in "lmom.start": "sigma" changed to "sd"
 version 1.0-0:

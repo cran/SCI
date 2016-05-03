@@ -3,7 +3,7 @@
 \alias{SCI}
 \docType{package}
 \title{
-  Standardized Climate Indices such as SPI, SRI or SPEI
+  Standardized Climate Indices Such as SPI, SRI or SPEI
 }
 
 \description{
@@ -18,8 +18,8 @@
 \tabular{ll}{
   Package: \tab SCI\cr
   Type: \tab Package\cr
-  Version: \tab 1.0-1\cr
-  Date: \tab 2014-06-10\cr
+  Version: \tab 1.0-2\cr
+  Date: \tab 2016-05-02\cr
   License: \tab GPL (>= 2)\cr
 }
 
@@ -32,8 +32,13 @@
 
 \references{
   Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
-  Stahl, K. Candidate Distributions for Climatological Drought Indices
-  (SPI and SPEI), 2014, submitted. 
+  Stahl, K.: Candidate Distributions for Climatological Drought Indices  (SPI and SPEI),
+  2015, International Journal of Climatology, 35, 4027-4040, doi:10.1002/joc.4267.
+
+  Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
+  Stahl, K.: Response to comment on "Candidate Distributions for Climatological
+  Drought Indices (SPI and SPEI)", 2016, International Journal of
+  Climatology, 36, 2132-2138, doi:10.1002/joc.4564.
 }
 
 \keyword{ package }

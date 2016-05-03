@@ -3,10 +3,10 @@ lmom.start <- function(x,distr=c("gamma","genlog","gev","gumbel",
 ### estimates parameters of distributions using L-moments
 ###
 ### x : data vector
-### distr : A character string ‘"name"’ naming a distribution for which
-### the corresponding density function (‘dname’), the
-### corresponding distribution function (‘pname’) and the
-### quantile function (‘qname’) must be defined (see for example 'GammaDist'
+### distr : A character string "name" naming a distribution for which
+### the corresponding density function ('dname'), the
+### corresponding distribution function ('pname') and the
+### quantile function ('qname') must be defined (see for example 'GammaDist'
     distr <- match.arg(distr)
     x.lmom <- try(lmom.ub(x),TRUE)
     if(distr == "gamma"){
@@ -27,7 +27,7 @@ lmom.start <- function(x,distr=c("gamma","genlog","gev","gumbel",
           if(class(ppar)=="try-error")
               ppar <- c(shape = NA, scale = NA, location=NA)           
     } else if(distr == "gev"){
-        if(require(evd)){
+        if(requireNamespace("evd", quietly = TRUE)){
             ppar <- try(pargev(x.lmom,checklmom=FALSE),TRUE)
             ppar <-  if(class(ppar)!="try-error"){
                 ppar$para <- c(loc=ppar$para["xi"],
@@ -42,7 +42,7 @@ lmom.start <- function(x,distr=c("gamma","genlog","gev","gumbel",
             stop("package 'evd' needed fro 'distr=gev'")
         }
     } else if(distr == "gumbel"){
-        if(require(evd)){
+        if(requireNamespace("evd", quietly = TRUE)){
             ppar <- try(pargum(x.lmom,checklmom=FALSE),TRUE)
             ppar <-  if(class(ppar)!="try-error"){
                 ppar$para
@@ -99,13 +99,13 @@ mom.start <- function(x,distr=c("gamma","gumbel","logis","lnorm","norm",
 ### estimates parameters of distributions using moments
 ###
 ### x : data vector
-### distr : A character string ‘"name"’ naming a distribution for which
-### the corresponding density function (‘dname’), the
-### corresponding distribution function (‘pname’) and the
-### quantile function (‘qname’) must be defined (see for example 'GammaDist'
+### distr : A character string "name" naming a distribution for which
+### the corresponding density function ('dname'), the
+### corresponding distribution function ('pname') and the
+### quantile function ('qname') must be defined (see for example 'GammaDist'
     distr <- match.arg(distr)
     if(distr %in% c("norm","lnorm","gamma","logis")){
-        ppar <- try(mmedist(x,distr),TRUE)
+        ppar <- try(fitdistrplus::mmedist(x,distr),TRUE)
         ppar <- if(class(ppar)!="try-error"){
             ppar$estimate
         } else {
@@ -116,7 +116,7 @@ mom.start <- function(x,distr=c("gamma","gumbel","logis","lnorm","norm",
                    logis=c(location = NA, scale = NA))
         }
     } else if(distr == "gumbel"){
-        if(require(evd)){
+        if(requireNamespace("evd", quietly = TRUE)){
             ppar <- try({
                 x <- x[x>0]
                 m <- mean(x)
@@ -155,10 +155,10 @@ dist.start <- function(x,distr,...){
 ### an attempt is undertaken to use 'mom.start'
 ###
 ### x : data vector
-### distr : A character string ‘"name"’ naming a distribution for which
-### the corresponding density function (‘dname’), the
-### corresponding distribution function (‘pname’) and the
-### quantile function (‘qname’) must be defined (see for example 'GammaDist'
+### distr : A character string "name" naming a distribution for which
+### the corresponding density function ('dname'), the
+### corresponding distribution function ('pname') and the
+### quantile function ('qname') must be defined (see for example 'GammaDist'
     par1 <- try(suppressWarnings(lmom.start(x=x,distr=distr,...)),silent=TRUE)
     if(class(par1)!="try-error"&all(is.finite(unlist(par1)))){
         return(par1)

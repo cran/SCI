@@ -174,22 +174,27 @@ transformSCI(x, ...)
 }
 
 \references{
-  Stagge, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
-  Stahl, K. Candidate Distributions for Climatological Drought Indices
-  (SPI and SPEI), 2014, submitted. 
+  Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
+  Stahl, K.: Candidate Distributions for Climatological Drought Indices  (SPI and SPEI),
+  2015, International Journal of Climatology, 35, 4027-4040, doi:10.1002/joc.4267.
+
+  Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
+  Stahl, K.: Response to comment on "Candidate Distributions for Climatological
+  Drought Indices (SPI and SPEI)", 2016, International Journal of
+  Climatology, 36, 2132-2138, doi:10.1002/joc.4564.
   
-  McKee, T.; Doesken, N. & Kleist, J. The relationship of drought
+  McKee, T.; Doesken, N. & Kleist, J.: The relationship of drought
   frequency and duration to time scales Preprints, 8th Conference on
-  Applied Climatology, 1993, 179-184 
+  Applied Climatology, 1993, 179-184.
   
-  Shukla, S. & Wood, A. W. Use of a standardized runoff index for
+  Shukla, S. & Wood, A. W.: Use of a standardized runoff index for
   characterizing hydrologic drought Geophysical Research Letters, 2008,
-  35, L02405
+  35, L02405.
   
-  Vicente-Serrano, S. M.; Begueria, S. & Lopez-Moreno, J. I. A Multiscalar
+  Vicente-Serrano, S. M.; Begueria, S. & Lopez-Moreno, J. I.: A Multiscalar
   Drought Index Sensitive to Global Warming: The Standardized
   Precipitation Evapotranspiration Index J. Climate, Journal of Climate,
-  American Meteorological Society, 2009, 23, 1696-1718 
+  American Meteorological Society, 2009, 23, 1696-1718.
 }
 
 \author{

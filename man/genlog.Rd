@@ -41,8 +41,8 @@ qgenlog(p, shape, scale, location)
   the Generalized Logistic Distribution in the \pkg{lmomco}
   package, making the code compatible with the standard nomenclature for
   distribution in \R. The original functions in \pkg{lmomco} are 
-  \code{\link{pdfglo}} (density function), \code{\link{quaglo}}
-  (quantile function) and \code{\link{cdfglo}} (distribution function).  
+  \code{\link[lmomco]{pdfglo}} (density function), \code{\link[lmomco]{quaglo}}
+  (quantile function) and \code{\link[lmomco]{cdfglo}} (distribution function).  
 }
 
 

@@ -1,3 +1,8 @@
+version 1.0-3:
+  * Making sure that linking functions in the doccumentation follows the convention  \link[PKG]{FOO} 
+  * using citation(auto = meta) and bibentry in CITATION file
+  * Adjustments to the Author field in DESCRIPTION
+  * avoidung class(x)=="try-error" and use tryCatch(...) or inherits(x,"try-error")
 version 1.0-2:
 	* Updated citation information and references in doccumentation
 	* replaced require(evd) with requireNamespace("evd", quietly = TRUE) in file distrstart.r

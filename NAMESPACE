@@ -26,10 +26,11 @@ S3method(transformSCI, default)
 importFrom(fitdistrplus, mledist) ## required for fitSCI
 import(lmomco) ## several functions needed...
 
-## imports from baseic packages
+## imports from basic packages
 importFrom("stats", "dgamma", "dnorm", "filter", "pgamma", "pnorm",
            "qgamma", "qnorm", "sd", "var")
 importFrom("utils", "capture.output")
+importFrom("stats", "setNames")
 
 
 ## exportPattern("^[[:alpha:]]+")

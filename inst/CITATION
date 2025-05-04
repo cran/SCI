@@ -1,53 +1,34 @@
 citHeader("To cite package 'SCI' in publications use:")
 
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
-vers <- paste("R package version", meta$Version)
 
-citEntry(entry="Manual",
-         title = "SCI: Standardized Climate Indices such as SPI, SRI or SPEI",
-         author = personList(as.person("Lukas Gudmundsson"),as.person("James H. Stagge")), 
-         year = year,
-         note = vers,
-         textVersion =
-         paste("Gudmundsson, L. & Stagge, J. H. (",year, "). SCI: Standardized Climate Indices such as SPI, SRI or SPEI", 
-               vers, ".", sep=""))
+## R package reference generated from DESCRIPTION metadata
+citation(auto = meta)
 
-citEntry(entry="Article",
-         title = "Candidate Distributions for Climatological Drought Indices  (SPI and SPEI)", 
-	 author = personList(
-             as.person("J. H. Stagge"),
-             as.person("L. M. Tallaksen"),
-             as.person("L. Gudmundsson"),
-             as.person("A. van Loon"),
-             as.person("K. Stahl")
-	 ),
-	 journal = "International Journal of Climatology",
-         year = "2015",
-         volume = "35",
-         pages = "4027-4040",
-         doi = {"10.1002/joc.4267"},        
-	 textVersion ="Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
-         Stahl, K.: Candidate Distributions for Climatological Drought Indices  (SPI and SPEI),
-         2015, International Journal of Climatology, 35, 4027-4040, doi:10.1002/joc.4267."
+bibentry(bibtype="Article",
+  title = "Candidate Distributions for Climatological Drought Indices  (SPI and SPEI)", 
+  author = c("J. H. Stagge",
+             "L. M. Tallaksen",
+             "L. Gudmundsson",
+             "A. van Loon",
+             "K. Stahl"),
+  journal = "International Journal of Climatology",
+  year = "2015",
+  volume = "35",
+  pages = "4027-4040",
+  doi = "10.1002/joc.4267"
 )
 
 
-citEntry(entry="Article",
-         title = "Response to comment on 'Candidate Distributions for Climatological Drought Indices (SPI and SPEI)'",  
-	 author = personList(
-             as.person("J. H. Stagge"),
-             as.person("L. M. Tallaksen"),
-             as.person("L. Gudmundsson"),
-             as.person("A. van Loon"),
-             as.person("K. Stahl")
-	 ),
-	 journal = "International Journal of Climatology",
-         year = "2016",
-         volume = "36",
-         pages = "2132-2138",
-         doi = {"10.1002/joc.4564"},        
-	 textVersion ="  Stagee, J.H. ; Tallaksen, L.M.; Gudmundsson, L.; van Loon, A.;
-         Stahl, K.: Response to comment on 'Candidate Distributions for Climatological
-         Drought Indices (SPI and SPEI)', 2016, International Journal of
-         Climatology, 36, 2132-2138, doi:10.1002/joc.4564."
+bibentry(bibtype="Article",
+  title = "Response to comment on 'Candidate Distributions for Climatological Drought Indices (SPI and SPEI)'",  
+  author = c("J. H. Stagge",
+             "L. M. Tallaksen",
+             "L. Gudmundsson",
+             "A. van Loon",
+             "K. Stahl"),
+	journal = "International Journal of Climatology",
+  year = "2016",
+  volume = "36",
+  pages = "2132-2138",
+  doi = "10.1002/joc.4564"
 )

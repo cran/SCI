@@ -43,9 +43,9 @@ transformSCI(x, ...)
   \item{p0}{
     if TRUE, model Probability of zero (precipitation) months is
     modeled with a mixed distribution as \eqn{D(x) = p_0 +
-    (1-p_0)G(x)}{D(x) = p0 + (1-p0)G(x)}, 
-    where  \eqn{G(x) > 0} is the reference distribution (e.g. Gamma)
-    \eqn{p0} is the probability of a zero (precipitation) month. 
+    (1-p_0)G(x)}{D(x) = p0 + (1-p0)G(x)}, where  \eqn{G(x) > 0} is the 
+    reference distribution (e.g. Gamma) and \eqn{p0} is the probability of a 
+    zero (precipitation) month. 
   }
   \item{p0.center.mass}{
     If TRUE, the Probability of zero (precipitation) is estimated using
@@ -61,7 +61,7 @@ transformSCI(x, ...)
   }  
   \item{mledist.par}{
     named \code{list} that can be used to pass parameters to
-    \code{\link{mledist}} in package \pkg{\link{fitdistrplus}}.
+    \code{\link[fitdistrplus]{mledist}} in package \pkg{fitdistrplus}.
   }  
   \item{start.fun}{
     Function with arguments \code{x} and \code{distr} estimating initial
@@ -136,8 +136,8 @@ transformSCI(x, ...)
   \item{dist.para.flag}{
     an vector indicating possible issues occurring throughout parameter
     estimation. Possible values are: 0. no problems occurred;
-    1. starting values could not be estimated; 2. \code{\link{mledist}}
-    crashed with unknown error; 3. \code{\link{mledist}} did not
+    1. starting values could not be estimated; 2. \code{\link[fitdistrplus]{mledist}}
+    crashed with unknown error; 3. \code{\link[fitdistrplus]{mledist}} did not
     converge; 4. all values in this month are \code{NA}; 5. all values
     in this month are constant, distribution not defined.
   }

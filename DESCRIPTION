@@ -1,20 +1,38 @@
 Package: SCI
 Type: Package
 Title: Standardized Climate Indices Such as SPI, SRI or SPEI
-Version: 1.0-2
-Date: 2016-05-02
-Author: Lukas Gudmundsson & James H. Stagge
+Version: 1.0-3
+Date: 2025-05-04
+Authors@R: c(person(
+		given = "Lukas",
+		family = "Gudmundsson",
+		role = c("aut", "cre"),
+		email = "lukas.gudmundsson@env.ethz.ch",
+		comment = c(ORCID = "0000-0003-3539-8621")
+		),
+	person(
+		given = "Jim",
+		family = "Stagge",
+		role = c("aut"),
+		email = "stagge.11@osu.edu",
+		comment = c(ORCID = "0000-0002-3667-2904")
+		)
+		)
 Maintainer: Lukas Gudmundsson <lukas.gudmundsson@env.ethz.ch>
 Depends: fitdistrplus, lmomco
 Suggests: evd
-Description: Functions for generating Standardized Climate Indices (SCI). 
-		SCI is a transformation of (smoothed) climate (or environmental)
-		time series that  removes seasonality and forces the data to
-		take values of the standard normal distribution. SCI was 
-		originally developed for precipitation. In this case it is 
-		known as the Standardized Precipitation Index (SPI).
+Description: Functions for generating Standardized Climate Indices (SCI).
+  Functions for generating Standardized Climate Indices (SCI). 
+  SCI is a transformation of (smoothed) climate (or environmental) time series 
+  that removes seasonality and forces the data to take values of the standard 
+  normal distribution. SCI was originally developed for precipitation. 
+  In this case it is known as the Standardized Precipitation Index (SPI).
 License: GPL (>= 2)
+RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2016-05-03 07:53:01 UTC; lukasgu
+Packaged: 2025-05-04 19:24:19 UTC; lukasgu
+Author: Lukas Gudmundsson [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-3539-8621>),
+  Jim Stagge [aut] (ORCID: <https://orcid.org/0000-0002-3667-2904>)
 Repository: CRAN
-Date/Publication: 2016-05-03 11:03:16
+Date/Publication: 2025-05-04 20:10:02 UTC

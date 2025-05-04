@@ -41,8 +41,8 @@ qpe3(p, shape, scale, location)
   the Pearson Type III Distribution in the \pkg{lmomco}
   package, making the code compatible with the standard nomenclature for
   distributions in \R. The original functions in \pkg{lmomco} are 
-  \code{\link{pdfpe3}} (density function), \code{\link{quape3}}
-  (quantile function) and \code{\link{cdfpe3}} (distribution function).  
+  \code{\link[lmomco]{pdfpe3}} (density function), \code{\link[lmomco]{quape3}}
+  (quantile function) and \code{\link[lmomco]{cdfpe3}} (distribution function).  
   
 }
 
